@@ -1,8 +1,9 @@
-import React from "react";
-// import PropTypes from "prop-types";
+import React, { useState } from "react";
 import "./desgin.css";
 
-const Features = ({ features, showAll }) => {
+const Features = ({ features }) => {
+  const [showAll, setShowAll] = useState(false);
+
   return (
     <div className="features-box">
       <h2>Features</h2>
@@ -13,21 +14,14 @@ const Features = ({ features, showAll }) => {
           </div>
         ))}
       </div>
-      {!showAll && <div className="view-more">View all Features ⬇</div>}
+      <div className="view-more" onClick={() => setShowAll(!showAll)}>
+        {showAll ? "View Less ⬆" : "View all Features ⬇"}
+      </div>
       <div className="categories">
         Comfort | Interior | Exterior | Safety | Entertainment
       </div>
     </div>
   );
-};
-
-// Features.propTypes = {
-//   features: PropTypes.array.isRequired,
-//   showAll: PropTypes.bool,
-// };
-
-Features.defaultProps = {
-  showAll: false,
 };
 
 export default Features;
