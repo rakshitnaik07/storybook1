@@ -1,0 +1,90 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-image {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.2s;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 0 2px #f97316;
+  }
+  
+  .filter-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #f97316;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .filter-button:hover {
+    background-color: #ea580c;
+  }
+  
+  .filter-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .user-profile-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .user-profile-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  .user-name {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  .dropdown-icon {
+    width: 16px;
+    height: 16px;
+    color:#6b7280;
+ }
